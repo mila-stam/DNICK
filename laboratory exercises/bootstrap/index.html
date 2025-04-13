@@ -1,10 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
 </head>
+<style>
+    #row {
+        height: 80%;
+    }
+
+    #image {
+        background-image: url('./zad1/zad1/cover.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .smn {
+        width: 70px;
+        height: 50px;
+    }
+</style>
 <body>
-$END$
+<div class="container vh=100">
+    <div class="row h-100" id="row">
+        <div id="image">
+            <ul class="nav d-flex justify-content-evenly align-items-start">
+                <li class="nav-item">
+                    <img src="zad1/zad1/logo.png" alt="LOGO">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOURS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">ADVANTAGES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTS</a>
+                </li>
+            </ul>
+
+            <div class="row h-50 d-flex justify-content-center align-content-center mt-5 mb-5">
+                <h1 class="row d-flex justify-content-center fw-bold mt-5 text-white">The Best Trips Around Iceland
+                    Begin With Us</h1>
+                <select class="col-2 mt-3">
+                    <option selected>Date</option>
+                    <option value="1">Item1</option>
+                    <option value="2">Item2</option>
+                    <option value="3">Item3</option>
+                </select>
+
+                <select class="col-2 ms-2 me-2 mt-3">
+                    <option selected>Your Price Range</option>
+                    <option value="1">Item1</option>
+                    <option value="2">Item2</option>
+                    <option value="3">Item3</option>
+                </select>
+                <button type="button" class="col-2 mt-3">Search Tours</button>
+
+                <div class="row h-50 d-flex justify-content-center align-content-end ">
+                    <img src="zad1/zad1/facebook.png" class="smn">
+                    <img src="zad1/zad1/twitter.png" class="smn">
+                    <img src="zad1/zad1/linkedin.png" class="smn">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row h-100">
+        <h1 class="row d-flex justify-content-center fw-bold mt-5 mb-5">Best Sellers</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">7 days/6 nights</p>
+                    <p class="d-inline" style="color: #0a53be">from $1000</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">3 days/2 nights</p>
+                    <p class="d-inline" style="color: #0a53be">From $500</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">3 days/2 nights</p>
+                    <p class="d-inline" style="color: #0a53be">From $500</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">3 days/2 nights</p>
+                    <p class="d-inline" style="color: #0a53be">From $500</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl5.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">3 days/2 nights</p>
+                    <p class="d-inline" style="color: #0a53be">From $500</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none">
+                <img class="card-img-top" src="/zad1/zad1/sl6.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="d-inline me-3">3 days/2 nights</p>
+                    <p class="d-inline" style="color: #0a53be">From $500</p>
+                    <h5 class="card-text mt-3 font-weight-bold">Winter Wonders and Delicious Detours</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row h-100 bg-dark-subtle">
+        <div class="col-6">
+            <h4>Get in touch</h4>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                       aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail"
+                       aria-describedby="basic-addon2">
+            </div>
+
+            <div class="input-group">
+
+                <textarea class="form-control" aria-label="Message"></textarea>
+            </div>
+
+            <button type="button" class="col-2 p-2 mt-2" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px">Send</button>
+
+        </div>
+
+        <div class="col-6">
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
