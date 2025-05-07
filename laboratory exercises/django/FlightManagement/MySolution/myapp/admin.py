@@ -26,6 +26,9 @@ class PilotAdmin(admin.ModelAdmin):
 class FlightAdmin(admin.ModelAdmin):
     exclude = ("user",)
 
+    def get_queryset(self, request):
+        return Flight.objects.filter(user=request.user)
+    
     def save_model(self, request, obj, form, change):
         obj.user = request.user
         return super(FlightAdmin, self).save_model(request, obj, form, change)
