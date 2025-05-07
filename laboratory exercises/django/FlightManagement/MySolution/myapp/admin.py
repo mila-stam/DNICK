@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Pilot, Airline, AirlinePilot, Baloon, Flight
+from .models import Pilot, Airline, AirlinePilot, Baloon, Flight, FlightReport, AirlineLog
 
 # Register your models here.
 
@@ -40,3 +40,5 @@ admin.site.register(Flight, FlightAdmin)
 admin.site.register(Baloon)
 admin.site.register(Pilot, PilotAdmin)
 admin.site.register(Airline, AirlineAdmin)
+admin.site.register(FlightReport)
+admin.site.register(AirlineLog)
