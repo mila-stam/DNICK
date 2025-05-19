@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container-fluid">
+
+        <div class="row bg-danger pt-5 pb-5">
+            <div class="col-6 align-content-center pl-5 ">
+                <h1 class="w-75">Explore the wonderland of tastes!</h1>
+                <h6>Assignment for HCI Exam in September 2024</h6>
+                <div>
+                    <button>Get Started</button>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <img alt="..." class="w-75"
+                     src="https://barnimages.com/wp-content/uploads/2019/04/20190429-barnimages-006-960x640.jpg">
+            </div>
+        </div>
+
+        <div class="row bg-light p-5 d-flex justify-content-center">
+            <p class="w-50 text-center" style="font-size: large">"Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Consequatur corporis doloribus facere laudantium provident repudiandae sint temporibus! Assumenda
+                error et, incidunt maxime nobis obcaecati."</p>
+            <p class="text-center col-12"><img alt="..." class="d-inline"
+                                               src="https://doodleipsum.com/40x40/avatar?i=acfab985b09897a5cbfcb83f05bb6b2f">John
+                Doe / Cakery&Bakery</p>
+        </div>
+
+        <div class="row-fluid text-center">
+            <div>
+                <h2 class="col-12">Products</h2>
+                <h6 class="col-12">Add more products in the edit form!</h6>
+            </div>
+
+            <div class="row d-flex justify-content-around">
+                {% for cake in cakes %}
+                    <div class="card col-4 px-5" style="width: 20rem;">
+                        <img class="card-img-top" src="{{ cake.image.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ cake.name }}</h4>
+                            <p class="card-text">{{ cake.description }}</p>
+                            <p class="text-center"><img alt="..." class="d-inline"
+                                                               src="{{ cake.baker.photo.url }}">{{ cake.baker.name }} {{ cake.baker.surname }}</p></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
+{% endblock %}
